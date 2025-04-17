@@ -1,0 +1,114 @@
+  /* ajuste de lagura e altura dos elementos*/
+  * {
+    box-sizing: border-box;
+  }
+  header{
+      background-color:bisque;
+      /* preenchimento*/
+      padding: 20px;
+      width: 100%;
+      border-radius: 5px;
+  }
+  header p{
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 26px;
+  }
+  aside p span{
+    color: #f37171;
+  }
+  .vermelho{
+    color:darkred
+  }
+  .azul{
+    color:blue
+  }
+  nav{
+      background-color:mintcream;
+      float: left;
+      width: 20%;
+  }
+  nav ul li{
+      list-style-type: none;
+      border-bottom: 2px solid #141414; /* colocar linha preta em baixo do texto*/
+      width: 90%;
+  }
+  nav ul li a{
+      text-decoration: none; /* tira a linha do link*/
+      color: black;
+      font-size: 20px;
+      line-height: 50px;
+      padding-bottom: 10px;
+  }
+  nav ul li a:hover{ /*:hover = quando passar o mouse sobre o link*/
+  color: rgb(236, 184, 229);
+  }
+  main{
+      background-color:mintcream;
+      float: left;
+      width: 60%;
+      padding: 20px; /* desgrudar das bordas*/
+  }
+  main p{
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 20px;
+  }
+  aside{
+      background-color: bisque;
+      float: left;
+      width: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 20px;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 15px; /*desgrudar do topo*/
+      box-shadow: 5px 5px 8px #da8f8f;
+      /* primeiro valor é pros lados, segundo valor para cima ou para baixo, terceiro valor desfoque */
+  }
+  footer{
+      background-color: mintcream;
+      float: left;
+      width: 100%;
+  }
+  footer p{
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      line-height: 50px;
+  }
+  footer p a{
+      text-decoration: none; /* tira a linha do link*/
+      color: black;
+      font-size: 20px;
+  }
+  footer p a:hover{ /*:hover = quando passar o mouse sobre o link*/
+  color: rgb(236, 184, 229);
+  }
+  /* responsividade= ajustar a largura da tela*/
+  /* for tablets*/
+  @media only screen and (max-width:800px) {
+    
+    aside{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    main{
+        width: 80%;
+    }
+  }
+
+  /* for mobile*/
+  @media only screen and (max-width:500px) {
+    
+     nav,main,aside{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    main{
+        width: 80%;
+    }
+    footer{
+        height: auto;
+    }
+  }
